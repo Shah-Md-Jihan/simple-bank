@@ -21,19 +21,43 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-green-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-red-300 p-8 rounded-xl">
                     <h4 class="text-2xl">Withdrow</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span> </h2>
                 </div>
                 <div class="bg-violet-600 p-8 rounded-xl">
                     <h4 class="text-2xl">Balance</h4>
-                    <h2 class="text-5xl">$1240</h2>
+                    <h2 class="text-5xl">$<span id="balance-total">1240</span> </h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and Withdrow field start -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-blue-300 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white mb-4">Please Deposit</h4>
+                    <input type="text" class="w-9/12 px-2 py-1 block mb-3" placeholder="$Amount you want to deposit"
+                        id="deposit-field">
+
+                    <button class="bg-amber-600 px-8 py-2 font-semibold rounded-lg text-white hover:bg-green-600"
+                        id="deposit-btn">Deposit</button>
+                </div>
+                <div class="bg-rose-600 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white mb-4">Please Withdrow</h4>
+                    <input type="text" class="w-9/12 px-2 py-1 block mb-3" placeholder="$Amount you want to withdrow"
+                        id="withdrow-field">
+                    <button class="bg-amber-600 px-8 py-2 font-semibold rounded-lg text-white hover:bg-green-600"
+                        id="withdrow-btn">Withdrow</button>
                 </div>
             </div>
         </section>
     </main>
+
+
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 
 </html>
